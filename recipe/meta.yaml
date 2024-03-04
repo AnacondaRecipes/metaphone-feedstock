@@ -1,4 +1,4 @@
-{% set name = "metaphone" %}
+{% set name = "Metaphone" %}
 {% set version = "0.6" %}
 
 package:
@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name[0]|upper }}{{ name[1:] }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ad0beadca66cb7ec6ede71ef72bb02da097c493ddf159930d6340bc83f53da27
   patches:
     - patches/0001-assertEqual-over-deprecated-assertEquals.patch
