@@ -36,7 +36,7 @@ test:
   commands:
     - pip check
     # ignore these tests, they fail probably because of unicode / utf8
-    - pytest --pyargs metaphone --ignore=tests/test_word.py
+    - pytest --pyargs metaphone -k "not test_init_unicode"
 
 about:
   home: https://github.com/oubiwann/metaphone
