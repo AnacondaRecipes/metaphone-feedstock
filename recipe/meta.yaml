@@ -33,12 +33,10 @@ test:
   requires:
     - pip
     - pytest
-  source_files:
-    - metaphone/tests
   commands:
     - pip check
     # ignore these tests, they fail probably because of unicode / utf8
-    - pytest metaphone/tests --ignore metaphone/tests/test_word.py
+    - pytest --pyargs metaphone --ignore metaphone/tests/test_word.py
 
 about:
   home: https://github.com/oubiwann/metaphone
